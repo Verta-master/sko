@@ -283,27 +283,27 @@
           <div class="swiper-container photo__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide photo__slide">
-                <a href="#" class="photo__img">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
                   <img src="img/images/194_peregorodka-iz-gipsokarton.jpg" alt="Фотографии выполненных работ">
                 </a>
               </div>
               <div class="swiper-slide photo__slide">
-                <a href="#" class="photo__img">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
                   <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
                 </a>
               </div>
               <div class="swiper-slide photo__slide">
-                <a href="#" class="photo__img">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
                   <img src="img/images/412_konditsionirovanie.jpg" alt="Фотографии выполненных работ">
                 </a>
               </div>
               <div class="swiper-slide photo__slide">
-                <a href="#" class="photo__img">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
                   <img src="img/images/805_remont-kafe.jpg" alt="Фотографии выполненных работ">
                 </a>
               </div>
               <div class="swiper-slide photo__slide">
-                <a href="#" class="photo__img">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
                   <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
                 </a>
               </div>
@@ -317,7 +317,7 @@
     </section>
     
     <section class="widget">
-      <div class="wrapper">
+      <div class="wrapper widget__wrap">
         <div class="widget__block">
           <p class="title">Отзывы</p>
           <div class="rating">
@@ -333,19 +333,21 @@
           <p class="title">Наши сертификаты</p>
           <ul class="widget__gallery">
             <li><a data-fancybox="gallery" href="img/images/cert-1.png"><img src="img/images/cert-1.png" alt="Наши сертификаты"></a></li>
-            <li><a data-fancybox="gallery" href="img/images/cert-2.png"><img src="img/images/cert-2.png" alt="Наши сертификаты"></a></li>
+            <li><a data-fancybox="gallery" href="img/images/cert-2.jpg"><img src="img/images/cert-2.jpg" alt="Наши сертификаты"></a></li>
             <li><a data-fancybox="gallery" href="img/images/cert-3.png"><img src="img/images/cert-3.png" alt="Наши сертификаты"></a></li>
-            <li><a data-fancybox="gallery" href="img/images/cert-4.png"><img src="img/images/cert-4.png" alt="Наши сертификаты"></a></li>
+            <li><a data-fancybox="gallery" href="img/images/cert-4.jpg"><img src="img/images/cert-4.jpg" alt="Наши сертификаты"></a></li>
             <li><a data-fancybox="gallery" href="img/images/cert-5.png"><img src="img/images/cert-5.png" alt="Наши сертификаты"></a></li>
-            <li><a data-fancybox="gallery" href="img/images/cert-6.png"><img src="img/images/cert-6.jpg" alt="Наши сертификаты"></a></li>
+            <li><a data-fancybox="gallery" href="img/images/cert-6.jpg"><img src="img/images/cert-6.jpg" alt="Наши сертификаты"></a></li>
           </ul>
         </div>
         <div class="widget__block">
           <p class="title">ВОПРОСЫ И ОТВЕТЫ</p>
-          <p class="widget__subtitle">Есть ли у вас строящиеся объекты, чтобы посмотреть качество в процессе работ?</p>
-          <p>Мы ведем работы одновременно на 10 и более объектах, все они находятся на разной стадии строительной готовности.<br>Если вы желаете 1 раз увидеть, вместо того, чтобы 5 раз услышать - скажите нам, с радостью проведем экскурсию по нашим объектам.</p>
+          <div class="widget__info">
+            <p class="widget__subtitle">Есть ли у вас строящиеся объекты, чтобы посмотреть качество в процессе работ?</p>
+            <p>Мы ведем работы одновременно на 10 и более объектах, все они находятся на разной стадии строительной готовности.<br>Если вы желаете 1 раз увидеть, вместо того, чтобы 5 раз услышать - скажите нам, с радостью проведем экскурсию по нашим объектам.</p>
+          </div>
           <a href="#" class="link-icon">Все вопросы</a>
-          <a href="#" class="btn btn--border"><i class="fa fa-question-circle"></i> Задать вопрос</a>
+          <a href="#" class="btn btn--border widget__btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
         </div>
       </div>
     </section>
@@ -407,7 +409,7 @@
     </div>
     <div class="footer__bottom">
       <div class="wrapper">
-        <p class="title">У вас есть вопросы?</p>
+        <p class="footer__subtitle">У вас есть вопросы?</p>
         <p><small>Звоните и мы с удовольствием на них ответим</small></p>
         <ul class="contacts">
           <li class="contacts__item">
@@ -451,6 +453,10 @@
       <textarea class="form__message" placeholder="Характер и объем работ"></textarea>
       <button type="submit" class="form__btn">Узнать стоимость работ</button>
     </form>
+  </div>
+  
+  <div style="display: none;" id="card" class="modal">
+    
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
