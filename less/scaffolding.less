@@ -91,7 +91,29 @@ h1,
 }
 
 h2 {
-  text-transform: uppercase;
   font-size: 24px;
-  font-weight: bold;
+}
+
+ol {
+  .reset();
+  counter-reset: myCounter;
+  list-style-type: none;
+  
+  li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  li::before {
+    counter-increment: myCounter;
+    content: counter(myCounter) ".";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-align: left;
+    color: #e32a66;
+    font-weight: bold;
+  }
 }
