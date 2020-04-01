@@ -1,0 +1,139 @@
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__order {
+  padding-right: 45px;
+  background-image: url(../img/icons/icon_calc.png);
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  background-position: right 20px center;
+}
+
+.header__address {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  
+  address {
+    color: #e32a66;
+  }
+}
+
+.header__phone {
+  position: relative;
+  padding-left: 23px;
+  display: block;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 700;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icons/phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+
+.header__call {
+  margin-left: 23px;
+  color: #e32a66;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px dashed #e32a66;
+}
+
+.header__contacts {
+  position: relative;
+}
+
+.header__drop {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 23px;
+  padding: 10px;
+  background: #fff;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  
+  &::after {
+    bottom: 100%;
+    left: 15%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255,255,255,0);
+    border-bottom-color: #ddd;
+    border-width: 10px;
+    margin: 0 0 0 -10px;
+  }
+}
+
+.header__close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #ddd;
+  border-radius: 30px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+
+.header__label {
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.header__input {
+  display: block;
+  width: 150px;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 14px;
+  border: 2px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.header__btn {
+  margin-top: 10px;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 12px;
+}

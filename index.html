@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>Ремонтные работы</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -17,13 +19,21 @@
       </div>
       <div class="header__contacts">
         <a href="tel:+749527809 20" class="header__phone">8 495 278 09 20</a>
-        <a data-fancybox data-src="#call" href="javascript:;" class="header__call"><span>Перезвоните мне</span></a>
+        <a href="#" class="header__call"><span>Перезвоните мне</span></a>
+        <div class="header__drop">
+          <button type="button" class="header__close" title="Закрыть"><i class="fa fa-times"></i></button>
+          <form action="#" class="header__form">
+            <label for="tel" class="header__label">Ваш телефон</label>
+            <input type="tel" id="tel" class="header__input">
+            <button type="submit" class="btn header__btn">Перезвоните мне</button>
+          </form>
+        </div>
       </div>
       <div class="header__address">
-        <b>ЖДЕМ ВАС ПО АДРЕСУ: <address>Г. МОСКВА,<br>БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214<br>С ПН ПО ПТ. С 9.00 ДО 18.00</address>
+        <b>ЖДЕМ ВАС ПО АДРЕСУ:&nbsp;<address>Г. МОСКВА,<br>БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214<br>С ПН ПО ПТ. С 9.00 ДО 18.00</address>
         </b>
       </div>
-      <a href="#" class="btn order">Рассчитать заказ</a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--border header__order">Рассчитать заказ</a>
     </div>
   </header>
   <nav class="menu">
@@ -426,10 +436,31 @@
   
   <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Рассчитать заказ</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="E-mail">
+      <p><i>если укажете email, то на него мы отправим копию рассчета</i></p>
+      <div class="form__line">
+        <select class="form__select">
+          <option value="" selected>Выберите вид работ</option>
+          <option value="1">Ремонт офиса</option>
+          <option value="2">Ремонт магазина</option>
+          <option value="3">Ремонт производственного помещения</option>
+          <option value="4">Ремонт медицинского центра</option>
+          <option value="5">Ремонт салона красоты</option>
+          <option value="6">Прочие работы</option>
+        </select>
+        <input type="text" class="form__input" placeholder="Площадь">
+      </div>
+      <textarea class="form__message" placeholder="Характер и объем работ"></textarea>
+      <button type="submit" class="form__btn">Узнать стоимость работ</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
