@@ -1,0 +1,48 @@
+.contacts {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contacts__item {
+  margin: 5px;
+  font-family: 'PT Sans Narrow', Arial;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding-left: 55px;
+  background: url(../img/icons/footer_contact_icons.png) no-repeat 0 0;
+  .transition();
+  
+  &--faq {
+    background-position: 0 -50px;
+  }
+  
+  &--phone {
+    font-size: 22px;
+    background-position: 0 -100px;
+  }
+  
+  &--address {
+    line-height: 20px;
+    font-size: 16px;
+    background-position: 0 -150px;
+  }
+}
+
+a.contacts__link {
+  &:hover,
+  &:active {
+    color: #e32a66;
+    .transition();
+  }
+}
