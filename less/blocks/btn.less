@@ -30,3 +30,30 @@
     }
   }
 }
+
+.link-icon {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #1f4181;
+  text-decoration: underline;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 14px;
+    height: 12px;
+    background-image: url(../img/icons/icon_more_link.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
