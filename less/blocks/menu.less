@@ -1,0 +1,150 @@
+.menu {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: @blue;
+  background-image: url(../img/images/bg_blue.png);
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__wrap {
+  position: relative;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover {
+    .menu__drop {
+      display: flex;
+    }
+    .menu__link--service {
+      background-color: #e32a66;
+      border-color: #e32a66;
+      color: #fff;
+      .transition();
+    }
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 13px;
+  font-family: "PT Sans Narrow",sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #e63f75;
+    .transition();
+  }
+  
+  &--service {
+    width: 140px;
+    height: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 15px;
+    padding-right: 30px;
+    line-height: 27px;
+    border: 1px solid #8892b9;
+    background: url(../img/icons/icon_drop_link.png) no-repeat 90% center;
+    border-radius: 4px;
+  }
+}
+
+.menu__drop {
+  position: absolute;
+  top: 100%;
+  left: -25px;
+  right: -25px;
+  height: 370px;
+  .reset();
+  list-style: none;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 40px 60px;
+  color: #222;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 7px 38px rgba(0,0,0,0.23);
+}
+
+.menu__block {
+  width: 33%;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+  line-height: 1;
+  
+  span {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "PT Sans", sans-serif;
+  }
+}
+
+.menu__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  &--faq {
+    position: relative;
+    .transition();
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: -35px;
+      width: 23px;
+      height: 21px;
+      background-image: url(../img/icons/asq.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+    &:hover,
+    &:active {
+      color: @red;
+      .transition();
+    }
+  }
+}
+
+.menu__sublist {
+  .reset();
+  list-style: none;
+}
+
+.menu__subitem {
+  margin-bottom: 10px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
