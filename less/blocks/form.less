@@ -22,11 +22,28 @@
 .form__input {
   height: 30px;
   text-align: center;
+  
+  &--shadow {
+    width: 192px !important;
+    padding: 0 15px;
+    border: 0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  &--mr {
+    margin-right: 30px;
+  }
 }
 
 .form__message {
   height: 102px;
   min-height: 102px;
+  
+  &--shadow {
+    width: ~"calc(100% - 90px)";
+    border: 0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+  }
 }
 
 .form__select {
@@ -71,4 +88,36 @@
     background-color: @blue;
     .transition();
   }
+}
+
+.form__label {
+  width: 90px;
+  
+  span {
+    color: @red;
+  }
+}
+
+.form__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 90px;
+}
+
+.form__link {
+  color: @blue;
+  font-size: 14px;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.form__send {
+  padding: 0;
+  width: 370px;
 }
