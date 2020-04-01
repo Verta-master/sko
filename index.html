@@ -269,7 +269,7 @@
           </div>
         </div>
         <div class="info__btns">
-          <a href="#" class="btn btn--red info__btn">Сделать заказ сейчас</a>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--red info__btn">Сделать заказ сейчас</a>
           <i>или</i>
           <a href="#" class="info__link">Посмотреть<br>фотографии выполненных работ</a>
         </div>
@@ -347,7 +347,7 @@
             <p>Мы ведем работы одновременно на 10 и более объектах, все они находятся на разной стадии строительной готовности.<br>Если вы желаете 1 раз увидеть, вместо того, чтобы 5 раз услышать - скажите нам, с радостью проведем экскурсию по нашим объектам.</p>
           </div>
           <a href="#" class="link-icon">Все вопросы</a>
-          <a href="#" class="btn btn--border widget__btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
+          <a data-fancybox="" data-src="#faq" href="javascript:;" class="btn btn--border widget__btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
         </div>
       </div>
     </section>
@@ -457,6 +457,27 @@
   
   <div style="display: none;" id="card" class="modal">
     
+  </div>
+  
+  <div style="display: none;" id="faq" class="modal modal--faq">
+    <p class="modal__title">Не нашли ответа на свой вопрос</p>
+    <p class="modal__comment">Задайте его нашим специалистом по телефону <a href="tel:+74957751765">8 495 775 17 65</a> или воспользуйтесь этой формой.</p>
+    <form action="#" class="form">
+      <div class="form__line">
+        <label for="name2" class="form__label">Имя <span>*</span>:</label>
+        <input type="text" id="name2" class="form__input form__input--shadow form__input--mr">
+        <label for="email2" class="form__label">E-mail:</label>
+        <input type="text" id="email2" class="form__input form__input--shadow">
+      </div>
+      <div class="form__line">
+        <label for="question" class="form__label">Вопрос <span>*</span>:</label>
+        <textarea id="question" class="form__message form__message--shadow"></textarea>
+      </div>
+      <div class="form__btns">
+        <a href="#" class="form__link">Очистить форму</a>
+        <button type="submit" class="btn form__send">Отправить даные для точного рассчета</button>
+      </div>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
