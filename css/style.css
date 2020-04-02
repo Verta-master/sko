@@ -2112,6 +2112,7 @@ a.map__link:active {
 .attention__block {
   background: url(../img/images/bg_grey_wave.png) 0 0;
   width: 340px;
+  max-width: 100%;
   padding: 30px;
 }
 .attention__title {
@@ -2173,6 +2174,7 @@ a.map__link:active {
     max-width: 100%;
     padding: 40px;
   }
+  .attention__wrap,
   .banner__wrap,
   .promo__drop,
   .promo__block {
@@ -2202,6 +2204,7 @@ a.map__link:active {
   .advert .title {
     margin-left: 0;
   }
+  .attention__info,
   .advert__text {
     width: 100%;
   }
@@ -2217,6 +2220,26 @@ a.map__link:active {
   }
   .feedback__form {
     padding: 20px;
+  }
+  .map__block {
+    position: static;
+    width: 100%;
+  }
+  .map__show {
+    display: none;
+  }
+  .team__list {
+    margin-right: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .team__item {
+    margin-right: 0;
+  }
+  .attention__block {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 }
 @media (max-width: 766px) {
@@ -2408,6 +2431,7 @@ a.map__link:active {
     margin-bottom: 5px;
     width: auto;
   }
+  .form--offer .form__btns,
   .form__btns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2419,6 +2443,13 @@ a.map__link:active {
     margin-top: 20px;
     max-width: 100%;
     font-size: 16px;
+  }
+  .form--offer .form__input,
+  .form--offer .form__message {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
