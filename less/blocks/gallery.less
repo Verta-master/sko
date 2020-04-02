@@ -1,0 +1,55 @@
+.gallery {
+  padding-top: 50px;
+}
+
+.gallery__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-bottom: 30px;
+}
+
+.gallery__item {
+  width: 225px;
+  max-width: 100%;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  
+  &:hover,
+  &:active {
+    .title-3 {
+      color: @red;
+      .transition();
+    }
+  }
+}
+
+.gallery__link {
+  display: block;
+  width: 100%;
+}
+
+.gallery__img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    height: 168px;
+    width: auto;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icons/photo_eagl.png) no-repeat 0 0;
+  }
+}
