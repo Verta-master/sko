@@ -478,6 +478,19 @@ h1,
 h2 {
   font-size: 24px;
 }
+.title-2 {
+  margin-bottom: 25px;
+  color: #112472;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.title-3 {
+  font-weight: 700;
+  color: #222;
+  font-family: 'PT Sans Narrow', Arial;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
 ol {
   margin: 0;
   padding: 0;
@@ -1877,8 +1890,16 @@ a.contacts__link:active {
 }
 .breadcrumbs {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   text-align: center;
+  -webkit-box-shadow: 0 12px 8px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.breadcrumbs .title {
+  margin-top: 15px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 48px;
 }
 .breadcrumbs__link {
   display: inline-block;
@@ -1908,12 +1929,6 @@ a.breadcrumbs__link:active {
 }
 .map {
   margin-bottom: 50px;
-}
-.map .title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 48px;
 }
 .map__pic {
   width: 100%;
@@ -2153,6 +2168,138 @@ a.map__link:active {
   left: 0;
   color: #e32a66;
 }
+.gallery {
+  padding-top: 50px;
+}
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -12px;
+  margin-bottom: 30px;
+}
+.gallery__item {
+  width: 225px;
+  max-width: 100%;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.gallery__item:hover .title-3,
+.gallery__item:active .title-3 {
+  color: #e32a66;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.gallery__link {
+  display: block;
+  width: 100%;
+}
+.gallery__img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.gallery__img img {
+  display: block;
+  height: 168px;
+  width: auto;
+}
+.gallery__img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background: url(../img/icons/photo_eagl.png) no-repeat 0 0;
+}
+.video {
+  margin-bottom: 30px;
+}
+.video__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -47px;
+}
+.video__item {
+  width: 282px;
+  max-width: 100%;
+  margin-right: 47px;
+  margin-bottom: 40px;
+}
+.video__item:hover .title-3,
+.video__item:active .title-3 {
+  color: #e32a66;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.video__item:hover .video__img::before,
+.video__item:active .video__img::before {
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.video__link {
+  display: block;
+  width: 100%;
+}
+.video__img {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.video__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 188px;
+}
+.video__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  text-align: center;
+  background-color: rgba(17, 36, 114, 0.5);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.video__img::after {
+  content: "\f03d";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 100px;
+  padding: 20px;
+  border: 2px solid #fff;
+}
 @media (max-width: 940px) {
   .wrapper {
     width: 100%;
@@ -2228,11 +2375,15 @@ a.map__link:active {
   .map__show {
     display: none;
   }
+  .video__list,
+  .gallery__list,
   .team__list {
     margin-right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .gallery__item,
+  .video__item,
   .team__item {
     margin-right: 0;
   }
@@ -2525,5 +2676,11 @@ a.map__link:active {
   .footer__title {
     padding-right: 30px;
     min-height: 30px;
+  }
+  .breadcrumbs .title {
+    font-size: 30px;
+  }
+  .title-2 {
+    text-align: center;
   }
 }
