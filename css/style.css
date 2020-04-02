@@ -779,6 +779,7 @@ ol li::before {
 .form__select {
   height: 30px;
   outline: none;
+  background-color: #fff;
 }
 .form__line {
   display: -webkit-box;
@@ -1464,6 +1465,7 @@ ol li::before {
   margin-top: 0;
 }
 .photo__img {
+  width: 100%;
   display: block;
   position: relative;
   overflow: hidden;
@@ -2079,6 +2081,7 @@ a.contacts__link:active {
   .feedback__wrap {
     display: block;
   }
+  .form__select,
   .form__message--shadow,
   .feedback__form,
   .feedback__view {
