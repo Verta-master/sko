@@ -1,0 +1,35 @@
+.breadcrumbs {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #919191;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+a.breadcrumbs__link {
+  margin-right: 5px;
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 7px;
+    margin-left: 5px;
+    background-image: url(../img/icons/path_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  &:hover,
+  &:active {
+    color: #222;
+  }
+}
