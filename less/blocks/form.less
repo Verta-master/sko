@@ -1,5 +1,35 @@
 .form {
   width: 100%;
+  
+  &--offer {
+    .form__label {
+      width: 180px;
+    }
+    
+    .form__message,
+    .form__input {
+      width: auto;
+      flex-grow: 1;
+    }
+    .form__send {
+      width: 130px;
+    }
+    .form__btns {
+      padding-left: 180px;
+    }
+  }
+}
+
+.form__comment {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191;
+  
+  span {
+    color: @red;
+  }
 }
 
 .form__select,

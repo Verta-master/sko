@@ -1,0 +1,63 @@
+.attention {
+  margin-bottom: 30px;
+}
+
+.attention__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.attention__info {
+  width: ~"calc(100% - 420px)";
+}
+
+.attention__block {
+  background: url(../img/images/bg_grey_wave.png) 0 0;
+  width: 340px;
+  padding: 30px;
+}
+
+.attention__title {
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', Arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.attention__link {
+  color: #112472;
+  display: block;
+  margin: 0 0 20px;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.attention__info-title {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.attention__list {
+  .reset();
+  list-style: none;
+  
+  li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    
+    &::before {
+      content: "\2014";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: @red;
+    }
+  }
+}
