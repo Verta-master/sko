@@ -720,7 +720,7 @@ ol li::before {
   display: block;
   width: 100%;
   margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 0 10px;
   border: solid 1px #A9A9A9;
   border-radius: 2px;
 }
@@ -768,6 +768,7 @@ ol li::before {
 .form__message {
   height: 102px;
   min-height: 102px;
+  padding: 5px 10px;
 }
 .form__message--shadow {
   width: calc(100% - 90px);
@@ -1745,4 +1746,94 @@ a.contacts__link:active {
   color: #e32a66;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.feedback {
+  padding: 0;
+}
+.feedback__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feedback__view {
+  width: 633px;
+}
+.feedback__form {
+  width: 295px;
+  padding: 20px 30px;
+  background: #f6f6f6;
+  border-left: 1px solid #ed2063;
+}
+.feedback__form .form__input {
+  padding: 0 15px;
+  border: 2px solid #d9d9d9;
+}
+.feedback__form .form__message {
+  border: 2px solid #d9d9d9;
+}
+.feedback__form .form__label {
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+}
+.feedback__img {
+  width: 100%;
+  position: relative;
+}
+.feedback__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.feedback__text {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  z-index: 10;
+  max-width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #f6f6f6;
+}
+.feedback__text p {
+  margin: 0;
+}
+.feedback__name {
+  padding: 10px;
+  margin: 0;
+  font-family: 'PT Sans Narrow', Arial;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.feedback__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #494949;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.feedback__comment {
+  color: #132674;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 41px;
+}
+.form__feedback {
+  width: 100%;
+}
+.feedback__aside {
+  color: #1c1c1c;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
