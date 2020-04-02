@@ -1849,6 +1849,168 @@ a.contacts__link:active {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.breadcrumbs {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #919191;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 14px;
+}
+a.breadcrumbs__link {
+  margin-right: 5px;
+}
+a.breadcrumbs__link::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 7px;
+  margin-left: 5px;
+  background-image: url(../img/icons/path_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+a.breadcrumbs__link:hover,
+a.breadcrumbs__link:active {
+  color: #222;
+}
+.map .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 48px;
+}
+.map__pic {
+  width: 100%;
+  height: 500px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.map__pic iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map__view {
+  position: relative;
+}
+.map__btn {
+  display: none;
+  position: absolute;
+  right: calc(50% + 290px);
+  top: 40px;
+  width: 180px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  color: #222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.map__btn:hover,
+.map__btn:active {
+  color: #e32a66;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.map__block {
+  position: absolute;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.9);
+  top: 40px;
+  padding: 28px;
+}
+.map__block--left {
+  width: 371px;
+  right: calc(50% + 99px);
+}
+.map__block--right {
+  width: 306px;
+  left: calc(50% + 164px);
+}
+.map__order {
+  margin-left: 55px;
+  width: 195px;
+  padding: 0;
+  padding-left: 40px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+  background-image: url(../img/icons/icon_calc.png);
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  background-position: left 15px center;
+}
+.map__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', Arial;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+.map__link {
+  display: block;
+  position: relative;
+  margin: 0 0 25px 15px;
+  padding: 0 0 0 40px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.map__link i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #e32a66;
+  width: 22px;
+  text-align: center;
+}
+.map__link--phone i {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+a.map__link:hover,
+a.map__link:active {
+  color: #e32a66;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.map__name {
+  margin-top: 20px;
+  padding-left: 55px;
+  font-weight: 700;
+}
+.map__name span {
+  display: block;
+  font-size: 14px;
+  color: #919191;
+  font-weight: 400;
+}
+.map__show {
+  margin-left: 55px;
+  color: #e32a66;
+}
+.map__show:hover,
+.map__show:active {
+  text-decoration: underline;
+}
+.map__comment {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+}
 @media (max-width: 940px) {
   .wrapper {
     width: 100%;

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ремонтные работы</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.jpg" alt="Logo">
+      </a>
+      <div class="header__contacts">
+        <a href="tel:+749527809 20" class="header__phone">8 495 278 09 20</a>
+        <a href="#" class="header__call"><span>Перезвоните мне</span></a>
+        <div class="header__drop">
+          <button type="button" class="header__close" title="Закрыть"><i class="fa fa-times"></i></button>
+          <form action="#" class="header__form">
+            <label for="tel" class="header__label">Ваш телефон</label>
+            <input type="tel" id="tel" class="header__input">
+            <button type="submit" class="btn header__btn">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+      <div class="header__address">
+        <b>ЖДЕМ ВАС ПО АДРЕСУ:&nbsp;<address>Г. МОСКВА,<br>БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214<br>С ПН ПО ПТ. С 9.00 ДО 18.00</address>
+        </b>
+      </div>
+      <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--border header__order">Рассчитать заказ</a>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper menu__wrap">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О компании</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--service">Наши услуги</a>
+          <button type="button" class="menu__down"></button>
+          <ul class="menu__drop">
+            <li class="menu__block">
+              <p class="menu__title">Ремонтные работы</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт офисов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт коттеджей</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт магазинов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт производственных помещений</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт стоматологии</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Вентиляция</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Вентиляция и кондиционирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Дизайн и проектирование</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Инженерное проектирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт для бизнеса</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт ресторанов и кафе</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт медицинских центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт склада</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт цеха</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт завода</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт по отраслям</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт паркингов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт фитнес центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт салона красоты</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт гостиницы</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт аптек</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт автосалона</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <a href="#" class="menu__title menu__title--faq">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+              <span>Мы собрали ответы на большинство вопросов наших клиентов в одном разделе</span>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Галерея работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Энциклопедия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">ГЛАВНАЯ</a>
+        <span class="breadcrumbs__link">КОНТАКТЫ</span>
+      </div>
+    </nav>
+    
+    <section class="map">
+      <div class="wrapper">
+        <h1 class="title">КОНТАКТЫ</h1>
+      </div>
+      
+      <div class="map__view">
+        <div class="map__pic">
+          <iframe src="https://yandex.com/map-widget/v1/-/CKuSIL1z"></iframe>
+        </div>
+        
+        <button type="button" class="map__btn">Показать контакты</button>
+        
+        <div class="map__block map__block--left">
+          <p class="map__title">ДЛЯ УТОЧНЕНИЯ СТОИМОСТИ И ФОРМИРОВАНИЯ ПРЕДВАРИТЕЛЬНОЙ СМЕТЫ</p>
+          <a href="tel:+74952780920" class="map__link map__link--phone"><i class="fa fa-phone"></i>(495) 278-09-20</a>
+          <a href="mailto:info@skooperativ.ru" class="map__link map__link--email"><i class="fa fa-envelope"></i>info@skooperativ.ru</a>
+          <address class="map__link map__link--address"><i class="fa fa-map-marker-alt"></i>Г. МОСКВА,БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214 <span>(метро Румянцево)</span></address>
+          <button type="button" class="map__show">Посмотреть карту</button>
+          <p class="map__comment"><i>или воспользуйтесь онлайн-формой</i></p>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--border map__order">Рассчитать заказ</a>
+        </div>
+        
+        <div class="map__block map__block--right">
+          <p class="map__title">КОНТАКТЫ ДЛЯ ПОСТАВЩИКОВ МАТЕРИАЛОВ</p>
+          <a href="mailto:snab@skooperativ.ru" class="map__link map__link--email"><i class="fa fa-envelope"></i>snab@skooperativ.ru</a>
+          <p class="map__name">Вавилов Алексей<span>Менеджер по закупкам</span></p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="team">
+      <div class="wrapper">
+        <p class="title">НАША КОМАНДА</p>
+        <p>Безусловно не хватит места, чтобы выложить на сайте каждого мастера. Познакомьтесь с основными участниками команды "Стройкооператив". Они всегда на связи, и полностью отвечают за реализацию проекта.</p>
+        <ul class="team__list">
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/901_batrakov-maksim-viktorovich.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">БАТРАКОВ МАКСИМ ВИКТОРОВИЧ</p>
+            <p class="team__position">Генеральный директор</p>
+            <p class="team__phone">Добавочный ---</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/900_gladkov-oleg-nikolaevich.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">ГЛАДКОВ ОЛЕГ НИКОЛАЕВИЧ</p>
+            <p class="team__position">Президент компании</p>
+            <p class="team__phone">Добавочный ---</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/902_kuzmina-inga.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">ВАСИЛЬЕВА ИНГА</p>
+            <p class="team__position">Менеджер проектов</p>
+            <p class="team__phone">Добавочный 102</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/903_gamzatov-eduard-bedretdino.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">ГАМЗАТОВ ЭДУАРД БЕДРЕТДИНОВИЧ</p>
+            <p class="team__position">Менеджер проектов</p>
+            <p class="team__phone">Добавочный 101</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/904_menshikov-viktor-aleksandr.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">МЕНЬШИКОВ ВИКТОР АЛЕКСАНДРОВИЧ</p>
+            <p class="team__position">Снабженец</p>
+            <p class="team__phone">Добавочный 103</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/905_dyachenko-sergey-pavlovich.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">ДЬЯЧЕНКО СЕРГЕЙ ПАВЛОВИЧ</p>
+            <p class="team__position">Инженер-сметчик</p>
+            <p class="team__phone">Добавочный 106</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/906_kotenyov-aleksandr-mikhaylov.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">КОТЕНЁВ АЛЕКСАНДР МИХАЙЛОВИЧ</p>
+            <p class="team__position">Инженер-сметчик</p>
+            <p class="team__phone">Добавочный 108</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/907_naumov-evgeniy-nikolaevich.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">НАУМОВ ЕВГЕНИЙ НИКОЛАЕВИЧ</p>
+            <p class="team__position">Менеджер по кадрам</p>
+            <p class="team__phone">Добавочный 111</p>
+          </li>
+          <li class="team__item">
+            <figure class="team__img">
+              <img src="img/images/908_golubkova-svetlana-aleksee.png" alt="НАША КОМАНДА">
+            </figure>
+            <p class="team__name">ГОЛУБКОВА СВЕТЛАНА АЛЕКСЕЕВНА</p>
+            <p class="team__position">Бухгалтер</p>
+            <p class="team__phone">Добавочный 105</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="attention">
+      <div class="wrapper">
+        <div class="attention__wrap">
+          <div class="attention__info">
+            <p class="title">Обратите внимание</p>
+            <ul class="attention__list">
+              <li>Оценка работ (материалов) и выезд на объект (в пределах МКАД) бесплатная.</li>
+              <li>Работа строго по договору. Перечень работ (смета) и стоимость закрепляется в договоре. Работы выполняем профессионально - посмотрите фотогалерею!</li>
+              <li>Стоимость вызова по Москве - 0 руб. и 1000 руб. если нужно выехать за МКАД и возвращается Вам, как только мы приступим к работе.</li>
+              <li>Внимание! Специалист вызывается только, если вы согласны с ценами указанными в прайс-листе или согласованные с менеджером по телефону.</li>
+            </ul>
+          </div>
+          <div class="attention__block">
+            <p class="attention__title">НАМ ВАЖНО ВАШЕ МНЕНИЕ</p>
+            <a data-fancybox="" data-src="#offer" href="javascript:;" class="attention__link">Напишите отзыв о нашей работе или работе наших сотрудников</a>
+            <a data-fancybox="" data-src="#offer" href="javascript:;" class="attention__link">Вы можете посоветовать нам, как улучшить работу компании</a>
+            <a data-fancybox="" data-src="#offer" href="javascript:;" class="attention__link">Какую информацию вы бы еще хотели увидеть на страницах нашего сайта?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">О компании</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Наша команда</a></li>
+              <li><a href="#">Как мы работаем</a></li>
+              <li><a href="#">Отзывы и кейсы</a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+          <a href="#" class="footer__title">Энциклопедия</a>
+          <a href="#" class="footer__title">Галерея работ</a>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонтные работы</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт офисов</a></li>
+              <li><a href="#">Ремонт квартир</a></li>
+              <li><a href="#">Ремонт коттеджей</a></li>
+              <li><a href="#">Ремонт магазинов</a></li>
+              <li><a href="#">Ремонт производственных помещений</a></li>
+              <li><a href="#">Ремонт стоматологии</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Дизайн и проектирование</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Дизайн интерьеров и 3D</a></li>
+              <li><a href="#">Инженерное проектирование</a></li>
+            </ul>
+          </div>
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт для бизнеса</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт ресторанов и кафе</a></li>
+              <li><a href="#">Ремонт медицинских центров</a></li>
+              <li><a href="#">Ремонт склада</a></li>
+              <li><a href="#">Ремонт цеха</a></li>
+              <li><a href="#">Ремонт завода</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт по отраслям</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт паркингов</a></li>
+              <li><a href="#">Ремонт фитнес центров</a></li>
+              <li><a href="#">Ремонт салона красоты</a></li>
+              <li><a href="#">Ремонт гостиницы</a></li>
+              <li><a href="#">Ремонт аптек</a></li>
+              <li><a href="#">Ремонт автосалона</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <p class="footer__subtitle">У вас есть вопросы?</p>
+        <p><small>Звоните и мы с удовольствием на них ответим</small></p>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--order">Онлайн заявка</a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--faq">Часто задаваемые<br>вопросы</a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+74952780920" class="contacts__link contacts__link--phone">8 495 278 09 20</a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 426<br>(метро Румянцево)</address>
+          </li>
+        </ul>
+        <p class="footer_copyright">© 2005 - 2020, Стройкооператив, Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Рассчитать заказ</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="E-mail">
+      <p><i>если укажете email, то на него мы отправим копию рассчета</i></p>
+      <div class="form__line">
+        <select class="form__select">
+          <option value="" selected="">Выберите вид работ</option>
+          <option value="1">Ремонт офиса</option>
+          <option value="2">Ремонт магазина</option>
+          <option value="3">Ремонт производственного помещения</option>
+          <option value="4">Ремонт медицинского центра</option>
+          <option value="5">Ремонт салона красоты</option>
+          <option value="6">Прочие работы</option>
+        </select>
+        <input type="text" class="form__input" placeholder="Площадь">
+      </div>
+      <textarea class="form__message" placeholder="Характер и объем работ"></textarea>
+      <button type="submit" class="form__btn">Узнать стоимость работ</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="offer" class="modal modal--faq">
+    <p class="modal__title">ВАШИ ПРЕДЛОЖЕНИЯ</p>
+    <form action="#" class="form">
+      <div class="form__line">
+        <label for="name2" class="form__label">Имя:</label>
+        <input type="text" id="name2" class="form__input form__input--shadow form__input--mr">
+      </div>
+      <div class="form__line">
+        <label for="email2" class="form__label">E-mail:</label>
+        <input type="text" id="email2" class="form__input form__input--shadow">
+      </div>
+      <div class="form__line">
+        <label for="question" class="form__label">Ваши предложения <span>*</span>:</label>
+        <textarea id="question" class="form__message form__message--shadow"></textarea>
+      </div>
+      <div class="form__btns">
+        <button type="submit" class="btn form__send">Отправить</button>
+        <p class="form__comment"><span>*</span> — Поля, обязательные для заполнения</p>
+      </div>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <!-- Hide/show map blocks -->
+  <script>
+    $('.map__show').click(function() {
+      $('.map__block').slideUp();
+      $('.map__btn').slideDown();
+    });
+    $('.map__btn').click(function() {
+      $(this).slideUp();
+      $('.map__block').slideDown();
+    })
+  </script>
+</body>
+</html>
