@@ -911,6 +911,7 @@ ol li::before {
   background-color: #112472;
   background-image: url(../img/images/bg_blue.png);
 }
+.menu__down,
 .menu__btn {
   display: none;
 }
@@ -1622,6 +1623,9 @@ ol li::before {
   padding-bottom: 20px;
   margin-bottom: 70px;
 }
+.footer__btn {
+  display: none;
+}
 .footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1911,10 +1915,97 @@ a.contacts__link:active {
 }
 @media (max-width: 766px) {
   .menu__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #112472;
+  }
+  .menu__btn {
+    display: block;
+    width: 40px;
+    height: 44px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+  }
+  .menu__btn--opened {
+    background-image: url(../img/icons/cross.svg);
+    background-size: 25px 25px;
+  }
+  .menu {
+    position: static;
+  }
+  .menu__item {
+    position: relative;
+    display: block;
+  }
+  .menu__item:hover .menu__drop {
+    display: none;
+  }
+  .menu__item:hover .menu__link--service {
+    background-color: rgba(255, 255, 255, 0);
+    color: #e32a66;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .menu__link {
+    width: 100%;
+    padding: 15px;
+  }
+  .menu__link--service {
+    margin: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    background-image: none;
+  }
+  .menu__drop {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    height: auto;
+    padding: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menu__block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .menu__title--faq {
+    padding-left: 35px;
+  }
+  .menu__title--faq::before {
+    left: 0;
+    top: 0;
+  }
+  .menu__down {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/icon_drop_link.png);
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    background-position: center;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .menu__down--up {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
   }
   .widget__block,
   .info__column,
@@ -2029,30 +2120,8 @@ a.contacts__link:active {
             order: 4;
     text-align: center;
   }
-  .menu {
-    position: static;
-  }
-  .menu__link--service {
-    margin: 0;
-  }
-  .widget__gallery li,
-  .menu__item {
+  .widget__gallery li {
     width: 50%;
-  }
-  .menu__drop {
-    height: auto;
-    padding: 20px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .menu__block {
-    width: 100%;
-    padding-right: 0;
-  }
-  .menu__title--faq::before {
-    background-image: none;
   }
   .banner__item {
     width: 100%;
@@ -2063,7 +2132,36 @@ a.contacts__link:active {
   .footer__column {
     width: 100%;
   }
+  .footer__option {
+    position: relative;
+  }
   .footer__list {
     padding-right: 0;
+    display: none;
+  }
+  .footer__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/icon_drop_link.png);
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    background-position: center;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .footer__btn--up {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .footer__title {
+    padding-right: 30px;
+    min-height: 30px;
   }
 }
