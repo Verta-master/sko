@@ -1562,12 +1562,7 @@ ol li::before {
   height: 156px;
   width: auto;
 }
-.photo__img::before {
-  content: "\f129";
-  position: absolute;
-  z-index: 5;
-  bottom: 5px;
-  left: 5px;
+.photo__img i.fa {
   width: 26px;
   height: 26px;
   border-radius: 50px;
@@ -1576,9 +1571,6 @@ ol li::before {
   color: #fff;
   line-height: 26px;
   font-size: 14px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
 }
 .photo__img::after {
   content: "\f00e";
@@ -1602,6 +1594,37 @@ ol li::before {
 }
 .photo__img:hover::after {
   opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.photo__icon {
+  position: absolute;
+  z-index: 5;
+  bottom: 5px;
+  left: 5px;
+}
+.photo__icon:hover i.fa {
+  background-color: #e32a66;
+}
+.photo__icon:hover .photo__hidden {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.photo__hidden {
+  position: absolute;
+  z-index: 15;
+  bottom: 32px;
+  left: 0;
+  width: 150px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 12px 8px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 8px -10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
