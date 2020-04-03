@@ -87,6 +87,31 @@
     margin-right: auto;
     margin-top: 20px;
   }
+  .wrapper--columns {
+    display: block;
+  }
+  .wrapper__content {
+    width: 100%;
+  }
+  .sidebar__list {
+    display: none;
+    border: 3px solid #112472;
+    
+    &::after {
+      display: none;
+    }
+  }
+  .sidebar__btn {
+    display: flex;
+    width: 210px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 766px) {
@@ -317,6 +342,7 @@
   .advert__price {
     margin-right: 0;
   }
+  .news__info,
   .footer__column {
     width: 100%;
   }
@@ -355,5 +381,12 @@
   }
   .title-2 {
     text-align: center;
+  }
+  .news__item {
+    display: block;
+  }
+  .news__img {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
