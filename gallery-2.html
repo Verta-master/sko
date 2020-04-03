@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ремонтные работы</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.jpg" alt="Logo">
+      </a>
+      <div class="header__contacts">
+        <a href="tel:+749527809 20" class="header__phone">8 495 278 09 20</a>
+        <a href="#" class="header__call"><span>Перезвоните мне</span></a>
+        <div class="header__drop">
+          <button type="button" class="header__close" title="Закрыть"><i class="fa fa-times"></i></button>
+          <form action="#" class="header__form">
+            <label for="tel" class="header__label">Ваш телефон</label>
+            <input type="tel" id="tel" class="header__input">
+            <button type="submit" class="btn header__btn">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+      <div class="header__address">
+        <b>ЖДЕМ ВАС ПО АДРЕСУ:&nbsp;<address>Г. МОСКВА,<br>БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214<br>С ПН ПО ПТ. С 9.00 ДО 18.00</address>
+        </b>
+      </div>
+      <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--border header__order">Рассчитать заказ</a>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper menu__wrap">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О компании</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--service">Наши услуги</a>
+          <button type="button" class="menu__down"></button>
+          <ul class="menu__drop">
+            <li class="menu__block">
+              <p class="menu__title">Ремонтные работы</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт офисов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт коттеджей</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт магазинов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт производственных помещений</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт стоматологии</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Вентиляция</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Вентиляция и кондиционирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Дизайн и проектирование</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Инженерное проектирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт для бизнеса</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт ресторанов и кафе</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт медицинских центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт склада</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт цеха</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт завода</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт по отраслям</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт паркингов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт фитнес центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт салона красоты</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт гостиницы</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт аптек</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт автосалона</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <a href="#" class="menu__title menu__title--faq">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+              <span>Мы собрали ответы на большинство вопросов наших клиентов в одном разделе</span>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Галерея работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Энциклопедия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">ГЛАВНАЯ</a>
+        <a href="#" class="breadcrumbs__link">ГАЛЕРЕЯ РАБОТ</a>
+        <span class="breadcrumbs__link">Ремонт автосалона</span>
+        
+        <h1 class="title">Ремонт автосалона</h1>
+      </div>
+    </nav>
+    
+    <section class="photo">
+      <div class="wrapper">
+        <div class="photo__comments">
+          <div class="photo__comment"><i class="fa fa-table"></i> - для проекта есть пример сметы</div>
+          <div class="photo__comment"><i class="fa fa-info"></i> - подробное описание этого проекта можно найти в наших кейсах раздела “О компании“</div>
+        </div>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+              <img src="img/images/194_peregorodka-iz-gipsokarton.jpg" alt="Фотографии выполненных работ">
+            </a>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+              <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
+            </a>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+              <img src="img/images/412_konditsionirovanie.jpg" alt="Фотографии выполненных работ">
+            </a>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+              <img src="img/images/805_remont-kafe.jpg" alt="Фотографии выполненных работ">
+            </a>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+              <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">О компании</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Наша команда</a></li>
+              <li><a href="#">Как мы работаем</a></li>
+              <li><a href="#">Отзывы и кейсы</a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+          <a href="#" class="footer__title">Энциклопедия</a>
+          <a href="#" class="footer__title">Галерея работ</a>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонтные работы</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт офисов</a></li>
+              <li><a href="#">Ремонт квартир</a></li>
+              <li><a href="#">Ремонт коттеджей</a></li>
+              <li><a href="#">Ремонт магазинов</a></li>
+              <li><a href="#">Ремонт производственных помещений</a></li>
+              <li><a href="#">Ремонт стоматологии</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Дизайн и проектирование</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Дизайн интерьеров и 3D</a></li>
+              <li><a href="#">Инженерное проектирование</a></li>
+            </ul>
+          </div>
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт для бизнеса</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт ресторанов и кафе</a></li>
+              <li><a href="#">Ремонт медицинских центров</a></li>
+              <li><a href="#">Ремонт склада</a></li>
+              <li><a href="#">Ремонт цеха</a></li>
+              <li><a href="#">Ремонт завода</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт по отраслям</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт паркингов</a></li>
+              <li><a href="#">Ремонт фитнес центров</a></li>
+              <li><a href="#">Ремонт салона красоты</a></li>
+              <li><a href="#">Ремонт гостиницы</a></li>
+              <li><a href="#">Ремонт аптек</a></li>
+              <li><a href="#">Ремонт автосалона</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <p class="footer__subtitle">У вас есть вопросы?</p>
+        <p><small>Звоните и мы с удовольствием на них ответим</small></p>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--order">Онлайн заявка</a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--faq">Часто задаваемые<br>вопросы</a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+74952780920" class="contacts__link contacts__link--phone">8 495 278 09 20</a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 426<br>(метро Румянцево)</address>
+          </li>
+        </ul>
+        <p class="footer_copyright">© 2005 - 2020, Стройкооператив, Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Рассчитать заказ</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="E-mail">
+      <p><i>если укажете email, то на него мы отправим копию рассчета</i></p>
+      <div class="form__line">
+        <select class="form__select">
+          <option value="" selected="">Выберите вид работ</option>
+          <option value="1">Ремонт офиса</option>
+          <option value="2">Ремонт магазина</option>
+          <option value="3">Ремонт производственного помещения</option>
+          <option value="4">Ремонт медицинского центра</option>
+          <option value="5">Ремонт салона красоты</option>
+          <option value="6">Прочие работы</option>
+        </select>
+        <input type="text" class="form__input" placeholder="Площадь">
+      </div>
+      <textarea class="form__message" placeholder="Характер и объем работ"></textarea>
+      <button type="submit" class="form__btn">Узнать стоимость работ</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="card" class="feedback">
+    <div class="feedback__wrap">
+      <div class="feedback__view">
+        <div class="feedback__img">
+          <img src="img/images/194_peregorodka-iz-gipsokarton.jpg" alt="">
+          <div class="feedback__text">
+            <p>Изготовление и монтаж навеса из поликарбоната для автомобиля.</p>
+          </div>
+        </div>
+        <p class="feedback__name">Навесы из поликарбоната</p>
+      </div>
+      <div class="feedback__form">
+        <p class="feedback__title">Отправить заявку</p>
+        <form action="#" class="form">
+          <label for="name3" class="form__label">Ваше имя<span>*</span>:</label>
+          <input type="text" id="name3" class="form__input">
+          <label for="tel3" class="form__label">Телефон<span>*</span>:</label>
+          <input type="tel" id="tel3" class="form__input">
+          <label for="email3" class="form__label">Е-mail:</label>
+          <input type="text" id="email3" class="form__input">
+          <label for="text3" class="form__label">Описание задания:</label>
+          <textarea id="text3" class="form__message"></textarea>
+          <button type="submit" class="btn btn--border form__feedback">Отправить заявку</button>
+        </form>
+        <p class="feedback__aside">приложив данное фото<br>в качестве примера</p>
+        <p class="feedback__comment">Мы пришлем расчет в течение 1 дня</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>
