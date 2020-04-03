@@ -1,0 +1,150 @@
+.tabs {
+  margin-bottom: 50px;
+}
+
+.tabs__btn {
+  width: 190px;
+  margin-bottom: 50px;
+  padding: 0;
+  
+  i {
+    margin-right: 7px;
+    font-size: 22px;
+  }
+}
+
+.tabs__top {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs__btns {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  .ui-tabs-active a {
+    position: relative;
+    background: #8e999f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    &::after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(142,153,159,0);
+      border-top-color: #8e999f;
+      border-width: 7px;
+      margin-left: -7px;
+    }
+  }
+}
+
+.tabs__name {
+  margin-right: 5px;
+  
+  a {
+    color: #112472;
+    font-size: 14px;
+    display: block;
+    padding: 6px 10px;
+    text-decoration: underline;
+    outline: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.tabs__list {
+  .reset();
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tabs__item {
+  min-height: 135px;
+  padding-bottom: 17px;
+  margin-bottom: 35px;
+  background: url(../img/icons/border_dotted.png) repeat-x 0 bottom;
+}
+
+.tabs__img {
+  float: right;
+  max-width: 210px;
+  margin: 0 0 20px 40px;
+  
+  img {
+    max-height: 300px;
+  }
+}
+
+.tabs__info {
+  margin-bottom: 20px;
+}
+
+.tabs__title {
+  display: inline-block;
+  margin: 0 50px 0 0;
+  font-family: 'PT Sans Narrow',Arial;
+  vertical-align: top;
+  font-size: 18px;
+  color: #e32a66;
+  font-weight: bold;
+  line-height: 20px;
+  
+  span {
+    display: block;
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+  }
+}
+
+.tabs__rating {
+  display: inline-block;
+  vertical-align: top;
+  
+  time {
+    display: block;
+    font-size: 14px;
+    color: #919191;
+  }
+}
+
+.tabs__review {
+  font-style: italic;
+  line-height: 20px;
+}
+
+.tabs__audio {
+  float: right;
+  width: 230px;
+  margin: 0 0 20px 40px;
+  
+  span {
+    color: #919191;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin: 0 0 5px;
+  }
+  
+  audio {
+    max-width: 100%;
+  }
+}

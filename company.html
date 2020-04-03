@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ремонтные работы</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.jpg" alt="Logo">
+      </a>
+      <div class="header__contacts">
+        <a href="tel:+749527809 20" class="header__phone">8 495 278 09 20</a>
+        <a href="#" class="header__call"><span>Перезвоните мне</span></a>
+        <div class="header__drop">
+          <button type="button" class="header__close" title="Закрыть"><i class="fa fa-times"></i></button>
+          <form action="#" class="header__form">
+            <label for="tel" class="header__label">Ваш телефон</label>
+            <input type="tel" id="tel" class="header__input">
+            <button type="submit" class="btn header__btn">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+      <div class="header__address">
+        <b>ЖДЕМ ВАС ПО АДРЕСУ:&nbsp;<address>Г. МОСКВА,<br>БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 214<br>С ПН ПО ПТ. С 9.00 ДО 18.00</address>
+        </b>
+      </div>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--border header__order">Рассчитать заказ</a>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper menu__wrap">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О компании</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--service">Наши услуги</a>
+          <button type="button" class="menu__down"></button>
+          <ul class="menu__drop">
+            <li class="menu__block">
+              <p class="menu__title">Ремонтные работы</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт офисов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт коттеджей</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт магазинов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт производственных помещений</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт стоматологии</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Вентиляция</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Вентиляция и кондиционирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Дизайн и проектирование</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Инженерное проектирование</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт для бизнеса</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт ресторанов и кафе</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт медицинских центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт склада</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт цеха</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт завода</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <p class="menu__title">Ремонт по отраслям</p>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Ремонт паркингов</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт фитнес центров</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт салона красоты</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт гостиницы</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт аптек</a></li>
+                <li class="menu__subitem"><a href="#">Ремонт автосалона</a></li>
+              </ul>
+            </li>
+            <li class="menu__block">
+              <a href="#" class="menu__title menu__title--faq">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+              <span>Мы собрали ответы на большинство вопросов наших клиентов в одном разделе</span>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Галерея работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Энциклопедия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">ГЛАВНАЯ</a>
+        <span class="breadcrumbs__link">ЭНЦИКЛОПЕДИЯ</span>
+        
+        <h1 class="title">ЭНЦИКЛОПЕДИЯ</h1>
+      </div>
+    </nav>
+    
+    <div class="wrapper wrapper--columns">
+      <nav class="sidebar">
+        <button type="button" class="btn sidebar__btn">Навигация</button>
+        <ul class="sidebar__list">
+          <li class="sidebar__item sidebar__item--active">
+            <a href="#" class="sidebar__link">Наша команда</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Как мы работаем</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Отзывы и кейсы</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Сертификаты</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Новости</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="wrapper__content">
+        <section class="company">
+          <div class="company__block">
+            <p class="company__title">Здравствуйте!</p>
+            <p>23 июля 2007 г. я передал ключи от офиса с свежим ремонтом директору начинающей производственной компании в бизнес парке "Электрозаводская 21" (на тот момент завод МЭЛЗ), с тех пор мы специализируемся на ремонте коммерческих помещений</p>
+            <p>Наши клиенты это малый и крупный бизнес, собственники и директора, главные инженеры предприятий, частные инвесторы</p>
+            <p>Чтобы делать свою работу хорошо, мы отладили систему управления проектами до автоматизма, отобрали лучших поставщиков материалов, поэтому наши цены низкие, а качество стабильно высокое</p>
+            <p>У нас много повторных заказов, нам выгодно быть надежным партнером, а клиенту не нужно искать строителей для очередного ремонта</p>
+            <p>Для этого мы строим прозрачную компанию, с понятными правилами работы, с нами удобно работать</p>
+            <p>Конечно же, не все идеально, бывают и косяки, как же без них?</p>
+            <p>Благодаря нашей системе контроля все недостатки исправимы, и устраняются быстро.</p>
+            <p><b><i>Будем рады видеть вас среди наших клиентов.</i><br><br>Успеха и процветания вашему бизнесу"</b></p>
+            <img src="img/images/sign.png" alt="Генеральный директор ГК Стройкооператив">
+            <p><b>Генеральный директор ГК Стройкооператив</b></p>
+            <p><b>Батраков М. В.</b></p>
+          </div>
+          
+          <div class="company__block">
+            <h2 class="title-2">НАШИ КЛИЕНТЫ</h2>
+            <p>За годы работы мы отремонтировали сотни помещений для бизнеса от офисов до производственных помещений с пуско-наладкой станков. Мы гордимся, что наше сотрудничество не ограничивается одним проектом и наши заказчики рекомендуют нас.</p>
+            <ul class="company__brands">
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/290_hm.png" alt="H&M">
+                </figure>
+                <p>H&M</p>
+              </li>
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/289_kompaniyabic.png" alt="КОМПАНИЯ BIC">
+                </figure>
+                <p>КОМПАНИЯ BIC</p>
+              </li>
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/48_russianmusicbox.jpg" alt="RUSSIAN MUSICBOX">
+                </figure>
+                <p>RUSSIAN MUSICBOX</p>
+              </li>
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/47_1sinteres.jpg" alt="1С ИНТЕРЕС">
+                </figure>
+                <p>1С ИНТЕРЕС</p>
+              </li>
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/88_lukoyl.jpg" alt="ЛУКОЙЛ">
+                </figure>
+                <p>ЛУКОЙЛ</p>
+              </li>
+              <li class="company__brand">
+                <figure class="company__logo">
+                  <img src="img/images/89_milandr.jpg" alt="МИЛАНДР">
+                </figure>
+                <p>МИЛАНДР</p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="company__block">
+            <h2 class="title-2">МЫ НА ТЕЛЕВИДЕНИИ</h2>
+            <p>Вы можете встретить наших рабочих не только у себя дома. во время проведение ремонтных работ, но и на ведущих телеканалах. Мы покаызваем примеры работ и даем советы на всю страну. Нашим профессионалам можно доверить свой дом и свой офис!</p>
+            <p>В коротких видео роликах, снятых 1-м каналом вы увидите наш подход и сможете оценить качество работы.</p>
+            
+            <h3><strong>Монтаж перегородок из гипсокартона</strong></h3>
+            <p><iframe width="560" height="315" src="//www.youtube.com/embed/tbmqlQsTndQ" frameborder="0" allowfullscreen=""></iframe></p>
+            
+            <h3><strong>Монтаж стен из гипсокартона</strong></h3>
+            <p><iframe width="560" height="315" src="//www.youtube.com/embed/cLV5TUuR9KQ" frameborder="0" allowfullscreen=""></iframe></p>
+          </div>
+        </section>
+        
+        <section class="case">
+          <ul class="case__list">
+            <li class="case__item">
+              <a href="#" class="case__link">
+                <figure class="case__img">
+                  <img src="img/images/slide-1.jpg" alt="Отзывы и кейсы">
+                </figure>
+                <p>Дизайн и ремонт 3-х комнатной квартиры S=105,6 м2</p>
+              </a>
+              <a href="#" class="link-icon">Подробнее о проекте</a>
+            </li>
+            <li class="case__item">
+              <a href="#" class="case__link">
+                <figure class="case__img">
+                  <img src="img/images/slide-2.jpg" alt="Отзывы и кейсы">
+                </figure>
+                <p>Дизайн-проект 3-х комнатной квартиры</p>
+              </a>
+              <a href="#" class="link-icon">Подробнее о проекте</a>
+            </li>
+            <li class="case__item">
+              <a href="#" class="case__link">
+                <figure class="case__img">
+                  <img src="img/images/slide-3.jpg" alt="Отзывы и кейсы">
+                </figure>
+                <p>Таунхаус в современном стиле</p>
+              </a>
+              <a href="#" class="link-icon">Подробнее о проекте</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--border case__btn">Все истории (5)</a>
+        </section>
+        
+        <section class="tabs" id="tabs">
+          <div class="tabs__top">
+            <h2 class="title-2">СМОТРИТЕ ТАКЖЕ</h2>
+            <ul class="tabs__btns">
+              <li class="tabs__name"><a href="#tabs-all">Все</a></li>
+              <li class="tabs__name"><a href="#tabs-video">Видео</a></li>
+              <li class="tabs__name"><a href="#tabs-audio">Аудио</a></li>
+            </ul>
+          </div>
+          <a href="#" class="btn tabs__btn"><i class="fa fa-pencil-alt"></i> Добавить отзыв</a>
+          <div class="tabs__field" id="tabs-all">
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <figure class="tabs__img">
+                  <img src="img/images/slide-1.jpg" alt="отзыв">
+                </figure>
+                <div class="tabs__info">
+                  <a href="#" class="tabs__title">ООО «С-Плюс», заместитель директора фирмы – Павел <span>Москва</span></a>
+                  <div class="tabs__rating">
+                    <img src="img/icons/5star.png" alt="Rating">
+                    <time datetime="2014-06-25">25 июня 2014 г.</time>
+                  </div>
+                </div>
+                <div class="tabs__review">
+                  <p>От лица компании «С-Плюс» хочу выразить благодарность коллективу «Стройкооператив». <br>Бригада выполнила работы по монтажу систем вентиляции и кондиционирования в здании нашей фирмы на высшем уровне.</p>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <figure class="tabs__img">
+                  <img src="img/images/slide-2.jpg" alt="отзыв">
+                </figure>
+                <div class="tabs__info">
+                  <a href="#" class="tabs__title">Евгений Мичуринский <span>Москва</span></a>
+                  <div class="tabs__rating">
+                    <img src="img/icons/5star.png" alt="Rating">
+                    <time datetime="2014-06-25">25 июня 2014 г.</time>
+                  </div>
+                </div>
+                <div class="tabs__review">
+                  <p>Заказывал в Стройкооператив демонтажные работы в своей двухкомнатной квартире в Москве.<br>Всем остался доволен. Сделали всё быстро, после работ вывезли весь мусор. </p>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <figure class="tabs__img">
+                  <img src="img/images/slide-3.jpg" alt="отзыв">
+                </figure>
+                <div class="tabs__info">
+                  <a href="#" class="tabs__title">Эльвира Александровна<span>Москва</span></a>
+                  <div class="tabs__rating">
+                    <img src="img/icons/5star.png" alt="Rating">
+                    <time datetime="2014-06-25">25 июня 2014 г.</time>
+                  </div>
+                </div>
+                <div class="tabs__review">
+                  <p>Мы обратились в Стройкооператив, когда приобрели небольшой коттедж в ближайшем Подмосковье.<br>Мы с мужем и детьми решили сделать там ремонт перед тем, как переехать. Очень рады, что обратились именно в эту фирму.<br>Здесь работают настоящие мастера своего дела.<br>Мы и не ожидали, что так быстро сможем переехать в свой коттедж с отлично выполненным ремонтом.<br>Огромное Вам спасибо за скорость и качество!</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__field" id="tabs-video">
+            
+          </div>
+          <div class="tabs__field" id="tabs-audio">
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <div class="tabs__audio">
+                  <span>Аудио</span>
+                  <audio src="" controls=""></audio>
+                </div>
+                <div class="tabs__info">
+                  <a href="#" class="tabs__title">Иван Петрович<span>Москва</span></a>
+                  <div class="tabs__rating">
+                    <img src="img/icons/5star.png" alt="Rating">
+                    <time datetime="2014-06-25">25 июня 2014 г.</time>
+                  </div>
+                </div>
+                <div class="tabs__review">
+                  <p>Ремонт сделан очень хорошо.<br>Очень доволен отношением к делу. На всех этапах чуствуется проыессиональный подход, и стремление сделать качественный ремонт.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">О компании</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Наша команда</a></li>
+              <li><a href="#">Как мы работаем</a></li>
+              <li><a href="#">Отзывы и кейсы</a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+          <a href="#" class="footer__title">Энциклопедия</a>
+          <a href="#" class="footer__title">Галерея работ</a>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонтные работы</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт офисов</a></li>
+              <li><a href="#">Ремонт квартир</a></li>
+              <li><a href="#">Ремонт коттеджей</a></li>
+              <li><a href="#">Ремонт магазинов</a></li>
+              <li><a href="#">Ремонт производственных помещений</a></li>
+              <li><a href="#">Ремонт стоматологии</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Дизайн и проектирование</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Дизайн интерьеров и 3D</a></li>
+              <li><a href="#">Инженерное проектирование</a></li>
+            </ul>
+          </div>
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт для бизнеса</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт ресторанов и кафе</a></li>
+              <li><a href="#">Ремонт медицинских центров</a></li>
+              <li><a href="#">Ремонт склада</a></li>
+              <li><a href="#">Ремонт цеха</a></li>
+              <li><a href="#">Ремонт завода</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__option">
+            <a href="#" class="footer__title">Ремонт по отраслям</a>
+            <button type="button" class="footer__btn"></button>
+            <ul class="footer__list">
+              <li><a href="#">Ремонт паркингов</a></li>
+              <li><a href="#">Ремонт фитнес центров</a></li>
+              <li><a href="#">Ремонт салона красоты</a></li>
+              <li><a href="#">Ремонт гостиницы</a></li>
+              <li><a href="#">Ремонт аптек</a></li>
+              <li><a href="#">Ремонт автосалона</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <p class="footer__subtitle">У вас есть вопросы?</p>
+        <p><small>Звоните и мы с удовольствием на них ответим</small></p>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--order">Онлайн заявка</a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--faq">Часто задаваемые<br>вопросы</a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+74952780920" class="contacts__link contacts__link--phone">8 495 278 09 20</a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">БЦ РУМЯНЦЕВО, КОРПУС Е, ОФИС 426<br>(метро Румянцево)</address>
+          </li>
+        </ul>
+        <p class="footer_copyright">© 2005 - 2020, Стройкооператив, Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Рассчитать заказ</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="E-mail">
+      <p><i>если укажете email, то на него мы отправим копию рассчета</i></p>
+      <div class="form__line">
+        <select class="form__select">
+          <option value="" selected>Выберите вид работ</option>
+          <option value="1">Ремонт офиса</option>
+          <option value="2">Ремонт магазина</option>
+          <option value="3">Ремонт производственного помещения</option>
+          <option value="4">Ремонт медицинского центра</option>
+          <option value="5">Ремонт салона красоты</option>
+          <option value="6">Прочие работы</option>
+        </select>
+        <input type="text" class="form__input" placeholder="Площадь">
+      </div>
+      <textarea class="form__message" placeholder="Характер и объем работ"></textarea>
+      <button type="submit" class="form__btn">Узнать стоимость работ</button>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Sidebar -->
+  <script>
+    if (window.innerWidth < 940) {
+      $('.sidebar__btn').click(function() {
+        $(this).next().slideToggle();
+      })
+    }
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
