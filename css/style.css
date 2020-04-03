@@ -2862,6 +2862,64 @@ a.map__link:active {
 .tabs__audio audio {
   max-width: 100%;
 }
+.pages {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pages__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page__nav i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 1;
+  color: #e32a66;
+  font-weight: 700;
+}
+.page__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+span.page__link {
+  border-color: #e32a66;
+}
+a.page__nav:hover,
+a.page__link:hover,
+a.page__nav:active,
+a.page__link:active {
+  color: #e32a66;
+}
 @media (max-width: 940px) {
   .wrapper {
     width: 100%;
