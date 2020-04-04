@@ -6,10 +6,11 @@
   padding: 0 20px;
   line-height: 1;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   font-size: 18px;
   border-radius: 5px;
   background-color: #112472;
+  text-decoration: none !important;
   .transition();
   
   &:hover,
@@ -19,7 +20,7 @@
   }
   
   &--border {
-    color: #222;
+    color: #222 !important;
     background-color: #fff;
     border: 2px solid #e32a66;
     
@@ -47,7 +48,7 @@
   margin-bottom: 15px;
   padding-left: 20px;
   font-size: 16px;
-  color: #1f4181;
+  color: #1f4181 !important;
   text-decoration: underline;
   
   &::before {
@@ -77,9 +78,10 @@
 
 .nav__link {
   color: @red;
+  text-decoration: none !important;
   
   &:hover,
   &:active {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 }

@@ -28,9 +28,14 @@
 
 .company__brand {
   width: 33%;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 0 !important;
+  
+  &::before {
+    display: none;
+  }
 }
 
 .company__logo {

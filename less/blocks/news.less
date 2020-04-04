@@ -11,10 +11,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
   color: #919191;
   font-size: 14px;
   line-height: 1.2;
+  padding-left: 0 !important;
+  
+  &::before {
+    display: none;
+  }
 }
 
 .news__img {
@@ -50,16 +55,17 @@
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #222;
+  color: #222 !important;
   font-size: 24px;
   line-height: 26px;
   text-transform: uppercase;
+  text-decoration: none !important;
   font-family: 'PT Sans Narrow', Arial;
   .transition();
   
   &:hover,
   &:active {
-    color: @red;
+    color: @red !important;
     .transition();
   }
 }

@@ -24,4 +24,31 @@
   .form__input {
     width: 150px !important;
   }
+  ul {
+    .reset();
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+
+      &::before {
+        content: "\2014";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: @red;
+      }
+    }
+  }
+  a {
+    color: @red;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
 }

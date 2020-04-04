@@ -7,13 +7,18 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -17px;
+  margin-right: -17px !important;
 }
 
 .certify__item {
   width: 213px;
   margin-right: 17px;
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
+  padding-left: 0 !important;
+  
+  &::before {
+    display: none;
+  }
 }
 
 .certify__img {

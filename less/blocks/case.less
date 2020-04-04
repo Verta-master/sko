@@ -35,17 +35,23 @@
 
 .case__item {
   width: 47%;
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
+  padding-left: 0 !important;
+  
+  &::before {
+    display: none;
+  }
 }
 
 .case__link {
   display: block;
   width: 100%;
-  color: #222;
+  color: #222 !important;
   font-family: 'PT Sans Narrow',Arial;
   text-transform: uppercase;
   font-weight: bold;
   line-height: normal;
+  text-decoration: none !important;
   .transition();
   
   p {
@@ -53,7 +59,7 @@
   }
   
   &:hover {
-    color: @red;
+    color: @red !important;
     .transition();
   }
 }
