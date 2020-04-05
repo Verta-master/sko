@@ -311,6 +311,63 @@
             </div>
           </div>
           
+          <div class="about__table">
+            <p class="about__comment">* - стоимость в рублях за один квадратный метр</p>
+            <table>
+              <tr>
+                <th>НАИМЕНОВАНИЕ РАБОТ</th>
+                <th>СТОИМОСТЬ МАТЕРИАЛОВ*</th>
+                <th>СТОИМОСТЬ РАБОТ*</th>
+                <th>ИТОГО</th>
+              </tr>
+            </table>
+            <p class="title-3">РЕМОНТ ОФИСА</p>
+            <table>
+              <tr>
+                <td>Косметический ремонт</td>
+                <td>-</td>
+                <td>1500 р. м<sup>2</sup></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Полный ремонт</td>
+                <td>-</td>
+                <td>5000 р. м<sup>2</sup></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Капитальный ремонт</td>
+                <td>-</td>
+                <td>7000 р. м<sup>2</sup></td>
+                <td>-</td>
+              </tr>
+            </table>
+            <p class="title-3">МИНИМАЛЬНО ВОЗМОЖНАЯ СТОИМОСТЬ МАТЕРИАЛОВ</p>
+            <table>
+              <tr>
+                <td>Косметический ремонт</td>
+                <td>1000 р. м<sup>2</sup></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Полный ремонт</td>
+                <td>1500 р. м<sup>2</sup></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Капитальный ремонт</td>
+                <td>2500 р. м<sup>2</sup></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+          <div class="about__btns">
+            <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--border about__order">Рассчитать заказ</a>
+            <i>Воспользуйтесь простым калькуляторм<br>для приблизительного рассчета стоимость работ.</i>
+          </div>
         </div>
         <div class="about__field" id="about-2">
           <div class="about__top">
@@ -443,6 +500,67 @@
         </div>
       </div>
     </section>
+    
+    <section class="photo">
+      <div class="wrapper">
+        <div class="photo__wrap">
+          <p class="title">Фотографии выполненных работ</p>
+          <div class="swiper-container photo__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide photo__slide">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+                  <img src="img/images/194_peregorodka-iz-gipsokarton.jpg" alt="Фотографии выполненных работ">
+                  <div class="photo__icon">
+                    <i class="fa fa-info"></i>
+                    <div class="photo__hidden">Перегородка из гипсокартона. Перегородка из гипсокартона.</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide photo__slide">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+                  <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
+                  <div class="photo__icon">
+                    <i class="fa fa-info"></i>
+                    <div class="photo__hidden">Инженерное проектирование</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide photo__slide">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+                  <img src="img/images/412_konditsionirovanie.jpg" alt="Фотографии выполненных работ">
+                  <div class="photo__icon">
+                    <i class="fa fa-info"></i>
+                    <div class="photo__hidden">Установка раковины</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide photo__slide">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+                  <img src="img/images/805_remont-kafe.jpg" alt="Фотографии выполненных работ">
+                  <div class="photo__icon">
+                    <i class="fa fa-info"></i>
+                    <div class="photo__hidden">Инженерное проектирование</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide photo__slide">
+                <a data-fancybox="" data-src="#card" href="javascript:;" class="photo__img">
+                  <img src="img/images/300_remont-kottedzhey.jpg" alt="Фотографии выполненных работ">
+                  <div class="photo__icon">
+                    <i class="fa fa-info"></i>
+                    <div class="photo__hidden">Установка раковины</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev photo__prev"></div>
+          <div class="swiper-button-next photo__next"></div>
+          <a href="#" class="btn photo__btn"><i class="fa fa-image"></i> Перейти в галерею работ</a>
+        </div>
+      </div>
+    </section>
+
   </main>
   
   <footer class="footer">
@@ -654,6 +772,29 @@
       slidesPerView: 4,
       spaceBetween: 20,
       loop: 'true',
+      breakpoints: {
+        940: {
+          slidesPerView: 3,
+        },
+        766: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        }
+      }
+    });
+    
+    var mySwiper = new Swiper ('.photo__slider', {
+      navigation: {
+        nextEl: '.photo__next',
+        prevEl: '.photo__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 30,
       breakpoints: {
         940: {
           slidesPerView: 3,
