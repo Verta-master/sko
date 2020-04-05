@@ -561,6 +561,68 @@
       </div>
     </section>
 
+    <section class="review">
+      <div class="wrapper">
+        <p class="review__title">Отзывы</p>
+        <div class="review__pics">
+          <div class="swiper-container review__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review__slide">
+                <div class="rating">
+                  <img src="img/icons/5star.png" alt="Отзывы">
+                </div>
+                <div class="widget__text">
+                  <p>Мы обратились в Стройкооператив, когда приобрели небольшой коттедж в ближайшем Подмосковье. Мы с мужем и...  <a href="#">Подробнее</a></p>
+                  <p class="widget__from">Эльвира Александровна</p>
+                </div>
+              </div>
+              <div class="swiper-slide review__slide">
+                <div class="rating">
+                  <img src="img/icons/5star.png" alt="Отзывы">
+                </div>
+                <div class="widget__text">
+                  <p>От лица компании «С-Плюс» хочу выразить благодарность коллективу «Стройкооператив». Бригада выполнила работы по монтажу систем... <a href="#">Подробнее</a></p>
+                  <p class="widget__from">ООО «С-Плюс», заместитель директора фирмы – Павел <span>Москва</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide review__slide">
+                <div class="rating">
+                  <img src="img/icons/5star.png" alt="Отзывы">
+                </div>
+                <div class="widget__text">
+                  <p>Я заказал работы с "под ключ" от идеи до реализации. Работа была непростой - плитка "ONIX", декоративный камин...  <a href="#">Подробнее</a></p>
+                  <p class="widget__from">Олег Николаевич <span>Домодедово</span></p>
+                </div>
+              </div>
+              <div class="swiper-slide review__slide">
+                <div class="rating">
+                  <img src="img/icons/5star.png" alt="Отзывы">
+                </div>
+                <div class="widget__text">
+                  <p>Мы обратились в Стройкооператив, когда приобрели небольшой коттедж в ближайшем Подмосковье. Мы с мужем и...  <a href="#">Подробнее</a></p>
+                  <p class="widget__from">Эльвира Александровна</p>
+                </div>
+              </div>
+              <div class="swiper-slide review__slide">
+                <div class="rating">
+                  <img src="img/icons/5star.png" alt="Отзывы">
+                </div>
+                <div class="widget__text">
+                  <p>От лица компании «С-Плюс» хочу выразить благодарность коллективу «Стройкооператив». Бригада выполнила работы по монтажу систем... <a href="#">Подробнее</a></p>
+                  <p class="widget__from">ООО «С-Плюс», заместитель директора фирмы – Павел <span>Москва</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev review__prev"></div>
+          <div class="swiper-button-next review__next"></div>
+        </div>
+        <div class="review__btns">
+          <a href="#" class="btn review__btn"><i class="fa fa-comments"></i> Еще отзывы о нашей работе</a>
+          <a href="#" class="btn review__btn"><i class="fa fa-pencil-alt"></i> Добавить отзыв</a>
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
@@ -785,7 +847,7 @@
       }
     });
     
-    var mySwiper = new Swiper ('.photo__slider', {
+    var mySwiper4 = new Swiper ('.photo__slider', {
       navigation: {
         nextEl: '.photo__next',
         prevEl: '.photo__prev',
@@ -800,6 +862,26 @@
           slidesPerView: 3,
         },
         766: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        }
+      }
+    });
+    
+    var mySwiper5 = new Swiper ('.review__slider', {
+      navigation: {
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      breakpoints: {
+        940: {
           slidesPerView: 2,
         },
         480: {
