@@ -120,6 +120,19 @@
   .gallery-thumbs .swiper-wrapper {
     justify-content: center;
   }
+  .review__next {
+    right: 0;
+  }
+  .review__prev {
+    left: 0;
+  }
+  .review__pics {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .question .sidebar {
+    display: none;
+  }
 }
 
 @media (max-width: 766px) {
@@ -327,6 +340,8 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
+  .about__top,
+  .office__wrap,
   .tabs__top {
     display: block;
   }
@@ -342,6 +357,60 @@
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .question__text,
+  .about__info,
+  .office__text {
+    width: 100%;
+  }
+  .about__calc,
+  .office__pic {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .benefits__title {
+    margin-bottom: 60px;
+  }
+  .benefits__control {
+    top: 40px;
+  }
+  .about__name {
+    width: auto;
+    
+    a {
+      padding: 15px;
+    }
+  }
+  .about__calc {
+    margin-bottom: 30px;
+  }
+  .about__table {
+    overflow-x: scroll;
+    
+    table {
+      width: 600px;
+    }
+  }
+  .about__btns {
+    flex-direction: column;
+    
+    i {
+      text-align: center;
+    }
+  }
+  .about__btns .about__order {
+    margin-bottom: 20px;
+  }
+  .question__btns,
+  .review__btns {
+    flex-direction: column;
+  }
+  .question__wrap {
+    flex-direction: column-reverse;
+  }
+  .question__wrap .video__link {
+    max-width: 100%;
   }
 }
 
@@ -423,5 +492,26 @@
   }
   .company__brand {
     width: 50%;
+  }
+  .benefits__control {
+    width: 100%;
+    justify-content: center;
+  }
+  .about__title {
+    flex-direction: column;
+  }
+  .question__wrap .video__link,
+  .about__name {
+    width: 100%;
+  }
+  .about__info {
+    padding-left: 0;
+    
+    &::before {
+      display: none;
+    }
+  }
+  .benefits__img img {
+    max-height: none;
   }
 }
