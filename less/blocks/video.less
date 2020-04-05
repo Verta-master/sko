@@ -22,10 +22,6 @@
       color: @red;
       .transition();
     }
-    .video__img::before {
-      opacity: 0;
-      .transition();
-    }
   }
 }
 
@@ -78,5 +74,13 @@
     border-radius: 100px;
     padding: 20px;
     border: 2px solid #fff;
+  }
+  
+  &:hover,
+  &:active {
+    &::before {
+      opacity: 0;
+      .transition();
+    }
   }
 }

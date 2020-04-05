@@ -623,6 +623,70 @@
         </div>
       </div>
     </section>
+    
+    <section class="question">
+      <div class="wrapper wrapper--columns">
+        <div class="wrapper__content">
+          <div class="question__wrap">
+            <a data-fancybox href="http://www.youtube.com/embed/cLV5TUuR9KQ?autoplay=1" class="video__link">
+              <figure class="video__img">
+                <img src="img/images/slide-2.jpg" alt="ФОТОГАЛЕРЕЯ">
+              </figure>
+            </a>
+            <div class="question__text">
+              <p class="title-2">Как мы работаем</p>
+              <p>В коротком видео ролике показаны съемки наших сотрудников 1-м каналом.<br>Вы увидите наш подход и сможете оценить качество работы.</p>
+            </div>
+          </div>
+          
+          <p class="title-2">Часто задаваемые вопросы</p>
+          <ul class="about__faq">
+            <li>
+              <i class="fa fa-question-circle"></i>
+              <p class="about__question">Есть ли у вас строящиеся объекты, чтобы посмотреть качество в процессе работ?</p>
+              <div class="about__answer">
+                <span>Ответ</span>
+                <p>Мы ведем работы одновременно на 10 и более объектах, все они находятся на разной стадии строительной готовности.<br>Если вы желаете 1 раз увидеть, вместо того, чтобы 5 раз услышать - скажите нам, с радостью проведем экскурсию по нашим объектам.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-question-circle"></i>
+              <p class="about__question">Вы делаете работы только по ремонту или еще что-то?</p>
+              <div class="about__answer">
+                <span>Ответ</span>
+                <p>Мы специализируемся на ремонте коммерческих помещений, а также смежных рабо в стоительстве. Вы можете заказать у нас: проектирование, дизайн, монтаж инженерных коммуникаций, общестроительные работы.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-question-circle"></i>
+              <p class="about__question">Какая схема оплаты материалов?</p>
+              <div class="about__answer">
+                <span>Ответ</span>
+                <p>Перед началом работ вы оплачиваете 100% стоимости материалов. Вы можете оплатить как вам удобно наличным и безналичным расчетом.</p>
+                <p>Это позволяет нам закупить их оптом со скидками до 30% от розничных цен.</p>
+                <p>Вы также можете закупить материалы самостоятельно.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="question__btns">
+            <a href="#" class="link-icon">Посмотреть ответы на другие вопросы</a>
+            <a data-fancybox data-src="#faq" href="javascript:;" class="btn btn--border question__btn"><i class="fa fa-question-circle"></i> Задать вопрос</a>
+          </div>
+        </div>
+      
+        <aside class="sidebar">
+          <p class="sidebar__title">Нам доверяют <span>Хорошие отзывы – лучшая рекомендация</span></p>
+          <ul class="sidebar__brands">
+            <li><img src="img/images/290_hm.png" alt="Logo"></li>
+            <li><img src="img/images/289_kompaniyabic.png" alt="Logo"></li>
+            <li><img src="img/images/48_russianmusicbox.jpg" alt="Logo"></li>
+            <li><img src="img/images/47_1sinteres.jpg" alt="Logo"></li>
+            <li><img src="img/images/88_lukoyl.jpg" alt="Logo"></li>
+            <li><img src="img/images/89_milandr.jpg" alt="Logo"></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
@@ -757,6 +821,27 @@
       <div class="form__wrap">
         <a href="#" class="form__link">Очистить форму</a>
         <button type="submit" class="btn form__send">Получить пример сметы</button>
+      </div>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="faq" class="modal modal--faq">
+    <p class="modal__title">Не нашли ответа на свой вопрос</p>
+    <p class="modal__comment">Задайте его нашим специалистом по телефону <a href="tel:+74957751765">8 495 775 17 65</a> или воспользуйтесь этой формой.</p>
+    <form action="#" class="form">
+      <div class="form__line">
+        <label for="name2" class="form__label">Имя <span>*</span>:</label>
+        <input type="text" id="name2" class="form__input form__input--shadow form__input--mr">
+        <label for="email2" class="form__label">E-mail:</label>
+        <input type="text" id="email2" class="form__input form__input--shadow">
+      </div>
+      <div class="form__line">
+        <label for="question" class="form__label">Вопрос <span>*</span>:</label>
+        <textarea id="question" class="form__message form__message--shadow"></textarea>
+      </div>
+      <div class="form__btns">
+        <a href="#" class="form__link">Очистить форму</a>
+        <button type="submit" class="btn form__send">Отправить даные для точного рассчета</button>
       </div>
     </form>
   </div>
