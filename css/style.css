@@ -487,6 +487,7 @@ h2 {
   font-size: 28px;
   text-transform: uppercase;
   font-family: 'PT Sans Narrow', Arial;
+  line-height: normal;
 }
 .title-3 {
   font-weight: 700;
@@ -494,6 +495,7 @@ h2 {
   font-family: 'PT Sans Narrow', Arial;
   text-transform: uppercase;
   margin: 0 0 5px;
+  line-height: normal;
 }
 ol {
   margin: 0;
@@ -1617,8 +1619,9 @@ ol li::before {
 }
 .photo__img img {
   display: block;
-  height: 156px;
-  width: auto;
+  max-height: 156px;
+  width: 100%;
+  height: auto;
 }
 .photo__img i.fa {
   width: 26px;
@@ -3823,6 +3826,9 @@ a.page__link:active {
 }
 .question__btn i {
   margin-right: 7px;
+  color: #112472;
+  font-size: 22px;
+  line-height: 1;
 }
 @media (max-width: 940px) {
   .wrapper {
@@ -3953,6 +3959,19 @@ a.page__link:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .review__next {
+    right: 0;
+  }
+  .review__prev {
+    left: 0;
+  }
+  .review__pics {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .question .sidebar {
+    display: none;
   }
 }
 @media (max-width: 766px) {
@@ -4173,6 +4192,8 @@ a.page__link:active {
     max-width: 100%;
     margin-bottom: 30px;
   }
+  .about__top,
+  .office__wrap,
   .tabs__top {
     display: block;
   }
@@ -4190,6 +4211,66 @@ a.page__link:active {
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .question__text,
+  .about__info,
+  .office__text {
+    width: 100%;
+  }
+  .about__calc,
+  .office__pic {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .benefits__title {
+    margin-bottom: 60px;
+  }
+  .benefits__control {
+    top: 40px;
+  }
+  .about__name {
+    width: auto;
+  }
+  .about__name a {
+    padding: 15px;
+  }
+  .about__calc {
+    margin-bottom: 30px;
+  }
+  .about__table {
+    overflow-x: scroll;
+  }
+  .about__table table {
+    width: 600px;
+  }
+  .about__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__btns i {
+    text-align: center;
+  }
+  .about__btns .about__order {
+    margin-bottom: 20px;
+  }
+  .question__btns,
+  .review__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .question__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .question__wrap .video__link {
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -4282,5 +4363,30 @@ a.page__link:active {
   }
   .company__brand {
     width: 50%;
+  }
+  .benefits__control {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .question__wrap .video__link,
+  .about__name {
+    width: 100%;
+  }
+  .about__info {
+    padding-left: 0;
+  }
+  .about__info::before {
+    display: none;
+  }
+  .benefits__img img {
+    max-height: none;
   }
 }
